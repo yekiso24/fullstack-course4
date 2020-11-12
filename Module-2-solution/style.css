@@ -1,0 +1,67 @@
+body {
+    background-color:rgba(0, 0, 0, 0.623);
+    margin: 70px;
+    height:100vh;
+    justify-content: center;
+    align-items:center;
+
+}
+
+
+
+.container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:20px;
+
+    
+
+}
+
+.box {
+    height:200px;   
+    color: white;
+    border: 2px solid rgb(87, 87, 136);
+    position: relative;
+    
+    
+
+}
+ h2 {
+     text-transform: uppercase;
+     
+ }
+
+ h1 {
+     background-color: crimson;
+     text-align: center;
+     text-transform: uppercase;
+
+ }
+ /*********** this is for desktop *****/
+
+ @media (min-width: 992px) {
+     .container {
+         display: flex;
+         float: left;
+     }
+ 
+}
+
+/******** this is for tablet *****/ 
+@media (min-width:768px) and (max-width:991px) {
+    .container {
+        display: grid;
+        float: left;
+    }
+}
+/******* this is for mobile *****/
+
+@media(min-width:0px) and (max-width:767px) {
+    .container {
+        display: block;
+        float:none;
+    }
+}
+ 
